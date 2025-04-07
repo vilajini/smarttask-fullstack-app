@@ -1,0 +1,40 @@
+<div class="table-wrapper">
+  <div class="filter-bar">
+    <input type="text" placeholder="Search Title" [(ngModel)]="filter.title" />
+    <input type="date" [(ngModel)]="filter.startDate" />
+    <input type="date" [(ngModel)]="filter.endDate" />
+    <select [(ngModel)]="filter.status">
+      <option value="">All Statuses</option>
+      <option value="TO_DO">TO_DO</option>
+      <option value="IN_PROGRESS">IN_PROGRESS</option>
+      <option value="DONE">DONE</option>
+    </select>
+    <button class="filter-btn" (click)="applyFilter()">Filter</button>
+  </div>
+
+  <button class="add-task-btn" (click)="openCreateTask()">+ Add Task</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Created At</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of filteredTasks">
+        <td>{{ task.title }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.status }}</td>
+        <td>{{ task.createdAt | date: 'short' }}</td>
+        <td>
+          <i class="material-icons" (click)="editTask(task)">edit</i>
+          <i class="material-icons" (click)="deleteTask(task.id)">delete</i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

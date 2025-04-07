@@ -1,0 +1,16 @@
+<div class="container" [class.dark-mode]="isDarkMode">
+  <div class="sidebar">
+    <h2>Task Manager</h2>
+    <nav>
+      <a routerLink="/tasks" routerLinkActive="active">All Tasks</a>
+      <a (click)="openCreateTask()">Create Task</a>
+    </nav>
+
+    <button class="toggle-mode" (click)="toggleTheme()">
+      {{ isDarkMode ? '🌙 Dark' : '☀️ Light' }} Mode
+    </button>
+  </div>
+   <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

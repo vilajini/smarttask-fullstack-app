@@ -1,0 +1,51 @@
+/* Dark mode glass effect */
+.dark-mode .content {
+    background: rgba(255, 255, 255, 0.05); /* subtle transparency */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .dark-mode .sidebar {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-dark);
+    transition: background 0.3s ease;
+  }
+  
+  
+  .dark-mode table {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: var(--text-dark);
+  }
+  
+  .dark-mode th,
+  .dark-mode td {
+    background: transparent;
+    color: var(--text-dark);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Smooth transitions for dark/light mode */
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark-mode .sidebar nav a {
+    color: var(--text-dark);
+  }
+  
+  .dark-mode .sidebar nav a.active {
+    color: #90caf9;
+  }
+  
+  
