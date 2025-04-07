@@ -63,5 +63,15 @@ In backend/pom.xml, check if this dependency exists. If not, add it:
 cd backend
 ./mvnw spring-boot:run
 
+---
 
+## 📸 Screenshots
+
+### 📋 Task List View
+
+![Task_m1](https://github.com/user-attachments/assets/6ecac005-2c0a-4215-a290-482855a48e95)
+
+### 📝 Task Creation Form
+
+![Task_m2](https://github.com/user-attachments/assets/3967d0de-755c-463d-88b8-6b1a0b2477ee)
 
