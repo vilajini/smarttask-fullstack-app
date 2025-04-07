@@ -41,12 +41,12 @@ In SQL  - CREATE DATABSE tasks;
 
 ### Step 2: Configure spring boot 
 In the file backend/src/main/resources/application.properties, make sure you have the following:
-# MySQL Configuration
+### MySQL Configuration
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
 spring.datasource.username=Your_username
 spring.datasource.password=your_mysql_password
 
-# JPA Settings
+### JPA Settings
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
