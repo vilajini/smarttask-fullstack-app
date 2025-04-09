@@ -27,7 +27,7 @@ A full-stack Task Manager web application built using **Angular** (frontend) and
 ---
 
 How to Run Backend & Frontend
-To get the app running, first make sure your database is set up (you can find the instructions below). Then, go into the backend folder and start the Spring Boot server using the command ./mvnw spring-boot:run. Once the backend is up and running, open a new terminal, go into the frontend folder, install the dependencies with npm install, and start the Angular app using ng serve. After that, just open your browser and go to http://localhost:4200 — and you're good to go!
+To get the app running, first make sure your database is set up (you can find the instructions below). Then, go into the backend folder and start the Spring Boot server using the command ./mvnw spring-boot:run. Once the backend is up and running, open a new terminal, go into the frontend folder, install the dependencies with npm install, and start the Angular app using ng serve. After that, just open your browser and go to http://localhost:4200/tasks — and you're good to go!
 
 
 ## 🛠️ MySQL Database Configuration
