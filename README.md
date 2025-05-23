@@ -64,9 +64,7 @@ ng serve
 
 ---
 
-### 📸 Screenshots
-
-*Add some screenshots here (Postman, UI previews, terminal logs, etc.)*
+### 📸 Video
 
 ---
 
