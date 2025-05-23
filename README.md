@@ -65,6 +65,10 @@ ng serve
 ---
 
 ### 📸 Video
+![Task_m2](https://github.com/user-attachments/assets/b91d5a4b-2283-462f-9534-03d96f166726)
+![Task_m1](https://github.com/user-attachments/assets/58ffb30e-664b-4b39-8a02-dfaa172e4d6c)
+https://github.com/user-attachments/assets/8c94464c-b02e-468f-a901-5116a0971213
+
 
 ---
 
