@@ -1,6 +1,6 @@
 # 📝 SmartTask - Fullstack Task Manager App
 
-A full-stack Task Manager web application built using **Angular** (frontend) and **Spring Boot** (backend) with **MongoDB/MySQL** for data storage. Supports **JWT Authentication** and optional **Dockerization**.
+A full-stack Task Manager web application built using **Angular** (frontend) and **Spring Boot** (backend) with **MongoDB/MySQL** for data storage.
 
 ---
 
@@ -13,7 +13,6 @@ A full-stack Task Manager web application built using **Angular** (frontend) and
 ✅ REST API with Spring Boot  
 ✅ Angular UI with Reactive Forms  
 ✅  MySQL support  
-✅ Dockerized
 
 ---
 
@@ -22,7 +21,7 @@ A full-stack Task Manager web application built using **Angular** (frontend) and
 - **Frontend**: Angular, TypeScript, Angular Material  
 - **Backend**: Spring Boot, Java, Spring Data JPA  
 - **Database**: MySQL  
-- **Tools**: Git, VS Code, Docker
+- **Tools**: Git, VS Code
   
 ---
 
