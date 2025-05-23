@@ -1,76 +1,84 @@
-# 📝 SmartTask - Fullstack Task Manager App
+## 🧠 SmartTask Fullstack App
 
-A full-stack Task Manager web application built using **Angular** (frontend) and **Spring Boot** (backend) with **MongoDB/MySQL** for data storage.
-
----
-
-## 📂 Project Structure
-
-## 🚀 Features
-
-✅ Create / View / Update / Delete tasks   
-✅ Task filtering by status (TO_DO, IN_PROGRESS, DONE)  
-✅ REST API with Spring Boot  
-✅ Angular UI with Reactive Forms  
-✅  MySQL support  
+A simple full-stack **Task Management** application built with **Angular** (frontend) and **Spring Boot** (backend). It allows users to perform core CRUD operations—create, view, update, and delete tasks.
 
 ---
 
-## 🛠️ Tech Stack
+### 🔧 Tech Stack
 
-- **Frontend**: Angular, TypeScript, Angular Material  
-- **Backend**: Spring Boot, Java, Spring Data JPA  
-- **Database**: MySQL  
-- **Tools**: Git, VS Code
-  
+| Frontend         | Backend     | Database      |
+| ---------------- | ----------- | ------------- |
+| Angular          | Spring Boot | MySQL         |
+| Angular Material | REST API    | JPA           |
+
+> *\*You can use either in-memory H2 for dev or MySQL/PostgreSQL for production.*
+
 ---
 
-How to Run Backend & Frontend
-To get the app running, first make sure your database is set up (you can find the instructions below). Then, go into the backend folder and start the Spring Boot server using the command ./mvnw spring-boot:run. Once the backend is up and running, open a new terminal, go into the frontend folder, install the dependencies with npm install, and start the Angular app using ng serve. After that, just open your browser and go to http://localhost:4200/tasks — and you're good to go!
+### ✨ Features
 
+* Add new tasks
+* View all tasks
+* Update task title, description & status
+* Delete tasks
+* Responsive UI with Angular Material
 
-## 🛠️ MySQL Database Configuration
+---
 
-Before running the backend, make sure your MySQL server is up and running.
+### 📁 Project Structure
 
-### 📌 Step 1: Create the Database
-Use any MySQL tool (MySQL CLI, Workbench, phpMyAdmin, etc.) and run:
+```
+smarttask-fullstack-app/
+│
+├── backend/              # Spring Boot backend
+│   ├── src/
+│   └── pom.xml
+│
+├── frontend/             # Angular frontend
+│   ├── src/
+│   └── angular.json
+```
 
-In SQL  - CREATE DATABSE tasks;
+---
 
-### Step 2: Configure spring boot 
-In the file backend/src/main/resources/application.properties, make sure you have the following:
-### MySQL Configuration
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
-spring.datasource.username=Your_username
-spring.datasource.password=your_mysql_password
+### ▶️ How to Run
 
-### JPA Settings
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+#### 👥 Backend – Spring Boot
 
-### Step 3: Make Sure MySQL Driver is in pom.xml
-In backend/pom.xml, check if this dependency exists. If not, add it:
-
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-j</artifactId>
-</dependency>
-
-### Step 4: Run the Backend
+```bash
 cd backend
 ./mvnw spring-boot:run
+```
+
+* Server runs on: `http://localhost:8080`
+
+#### 🌐 Frontend – Angular
+
+```bash
+cd frontend
+npm install
+ng serve
+```
+
+* Frontend runs on: `http://localhost:4200`
 
 ---
 
-## 📸 Screenshots
+### 📸 Screenshots
 
-### 📋 Task List View
+*Add some screenshots here (Postman, UI previews, terminal logs, etc.)*
 
-![Task_m1](https://github.com/user-attachments/assets/6ecac005-2c0a-4215-a290-482855a48e95)
+---
 
-### 📝 Task Creation Form
+### 🚀 Future Improvements
 
-![Task_m2](https://github.com/user-attachments/assets/3967d0de-755c-463d-88b8-6b1a0b2477ee)
+* Add authentication (JWT)
+* Connect to a real database (MySQL/PostgreSQL)
+* Filter/sort/search tasks
+* Deploy with Docker or Vercel/Render
 
+---
+
+### 📬 Contact
+
+Created by [@vilajini](https://github.com/vilajini) – feel free to connect!
